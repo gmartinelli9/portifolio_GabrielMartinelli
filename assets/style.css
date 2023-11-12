@@ -223,11 +223,13 @@ section.portifolio .flex{
     margin-top: 45px;
     transition: .2s;
     cursor: pointer;
+    align-items: center;
 }
 
 .portifolio .especialidades-box:hover{
     transform: scale(1.2);
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.623);
+    align-items: center;
 }
 
 .portifolio .especialidades-box i{
@@ -270,3 +272,75 @@ footer .line-footer p a{
     text-decoration: none;
 }
 
+@media screen and (max-width: 1024px){
+    /*CLASSES GERAIS*/
+    .flex{
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    /*CABEÇALHO*/
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+    /*TOPO*/
+
+    section.topo-do-site .flex{
+        gap: 40px
+
+    }
+
+    .topo-do-site h1{
+        font-size: 50px;
+    }
+
+    section.topo-do-site{
+        padding: 60px 1%;
+    }
+
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+
+    /*PONTOS FORTES*/
+    section.especialidades{
+        padding: 40px 11%;
+    }
+
+    /*SOBRE*/
+    section.sobre{
+        padding: 80px 8%;
+        line-height: 30px;
+    }
+
+    .sobre .txt-sobre h2{
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /*PORTIFOLIO*/
+    section.portifolio{
+        padding: 40px 11%;
+    }
+
+    /*RODAPE*/
+    footer .flex{
+        flex-direction: column;
+        gap: 30px
+    }
+    
+    footer .line-footer{
+        text-align: center;
+    }
+}
